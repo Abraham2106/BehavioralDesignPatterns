@@ -9,18 +9,20 @@ request along the chain until an object handles it.
 ```java
 public class Chain {
      public static void main(String[] args){
-         // se crean las instancias de las debidas clases 
+         // Crear las instancias de las clases correspondientes
          CPaquete paquete1 = new PaquetePequeño();
          CPaquete paquete2 = new PaqueteMediano();
          CPaquete paquete3 = new PaqueteGrande();
-         // se asignan los siguientes
+         
+         // Asignar el siguiente paquete en la cadena de responsabilidad
          paquete1.setNext(paquete2);
          paquete2.setNext(paquete3);
-         // se realizan las verificaciones
-         paquete1.verificarPaquete("Pequeño");
-         paquete1.verificarPaquete("Mediano");
-         paquete1.verificarPaquete("Grande");
-         paquete1.verificarPaquete("Fragil");
+         
+         // Realizar las verificaciones para cada tipo de paquete
+         paquete1.verificarPaquete("Pequeño"); // Verificar si el paquete es pequeño
+         paquete1.verificarPaquete("Mediano"); // Verificar si el paquete es mediano
+         paquete1.verificarPaquete("Grande");  // Verificar si el paquete es grande
+         paquete1.verificarPaquete("Fragil");  // Verificar si el paquete es frágil
      }
 }
 
