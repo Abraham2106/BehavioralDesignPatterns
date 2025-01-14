@@ -10,17 +10,23 @@ package com.mycompany.design;
  */
 public class Chain {
      public static void main(String[] args){
-         // se crean las instancias de las debidas clases 
-         CPaquete paquete1 = new PaquetePequeño();
-         CPaquete paquete2 = new PaqueteMediano();
-         CPaquete paquete3 = new PaqueteGrande();
-         // se asignan los siguientes
-         paquete1.setNext(paquete2);
-         paquete2.setNext(paquete3);
-         // se realizan las verificaciones
-         paquete1.verificarPaquete("Pequeño");
-         paquete1.verificarPaquete("Mediano");
-         paquete1.verificarPaquete("Grande");
-         paquete1.verificarPaquete("Fragil");
+        Verificador verificador = new VerificadorP();
+        Verificador verificador2 = new VerificadorN();
+        Verificador verificador3 = new VerificadorE();
+       
+        verificador.setNext(verificador2);
+        verificador2.setNext(verificador3);
+
+        Solicitud solicitud = new Solicitud("Solicitud 1", EstadoEntrega.EXCELENTE);
+        Solicitud solicitud2 = new Solicitud("Solicitud 2", EstadoEntrega.NORMAL);
+        Solicitud solicitud3 = new Solicitud("Solicitud 3", EstadoEntrega.PESIMO);
+
+        verificador.verificar(solicitud);
+        verificador.verificar(solicitud2);
+        verificador.verificar(solicitud3);
+        
+
+
+
      }
 }
