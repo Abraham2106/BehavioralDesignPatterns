@@ -1,4 +1,5 @@
 package com.mycompany.design;
+
 import java.util.ArrayList;
 
 /**
@@ -12,8 +13,9 @@ import java.util.ArrayList;
  * - proyectoPermanente: A static reference to a permanent project.
  * 
  * Methods:
- * - main(String[] args): The entry point of the application. It initializes the projects,
- *   adds them to the list, and prints their balances.
+ * - main(String[] args): The entry point of the application. It initializes the
+ * projects,
+ * adds them to the list, and prints their balances.
  * 
  * Usage:
  * - Run the main method to see the balance calculations for the projects.
