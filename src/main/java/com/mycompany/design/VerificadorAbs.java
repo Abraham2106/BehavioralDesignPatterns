@@ -1,4 +1,4 @@
-package com.mycompany.design.abstractEx;
+package com.mycompany.design;
 
 import com.mycompany.design.Solicitud;
 import com.mycompany.design.Verificador;

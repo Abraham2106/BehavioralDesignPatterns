@@ -1,4 +1,4 @@
-package com.mycompany.design.abstractEx;
+package abstractEx;
 
 import java.util.ArrayList;
 

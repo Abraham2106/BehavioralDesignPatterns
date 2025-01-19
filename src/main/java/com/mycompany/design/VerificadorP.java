@@ -1,7 +1,5 @@
 package com.mycompany.design;
 
-import com.mycompany.design.abstractEx.VerificadorAbs;
-
 public class VerificadorP extends VerificadorAbs {
     
     @Override
