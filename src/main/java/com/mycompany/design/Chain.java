@@ -10,6 +10,14 @@ package com.mycompany.design;
  */
 public class Chain {
      public static void main(String[] args){
+         
+         
+         
+         
+         
+         /**
+          * 
+          * Make another example
         Verificador verificador = new VerificadorP();
         Verificador verificador2 = new VerificadorN();
         Verificador verificador3 = new VerificadorE();
@@ -24,7 +32,7 @@ public class Chain {
         verificador.verificar(solicitud);
         verificador.verificar(solicitud2);
         verificador.verificar(solicitud3);
-        
+        */
 
 
 
