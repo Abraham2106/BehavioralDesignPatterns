@@ -10,7 +10,7 @@ package com.mycompany.design;
  */
 public class Tarea {
     String nombreTarea;
-    String categoria; // Ejemplo: "UI", "Base de Datos", "Backend"
+    String categoria; // Ejemplo: "interfaz", "Base de Datos", "Backend"
 
     /**
      * Constructor de la clase Tarea.

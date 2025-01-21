@@ -9,26 +9,26 @@ package com.mycompany.design;
  * @author solan
  */
 public class Chain {
-     public static void main(String[] args){
-         
-      Gestor pDisenador =  new Disenador();
-      Gestor pDataScientist = new DataScientist();
-      Gestor pBackend = new BackendDev();
-      
-      pDisenador.setNext(pDataScientist);
-      pDataScientist.setNext(pBackend);
-        
+
+    public static void main(String[] args) {
+
+        Gestor pDisenador = new Disenador();
+        Gestor pDataScientist = new DataScientist();
+        Gestor pBackend = new BackendDev();
+
+        pDisenador.setNext(pDataScientist);
+        pDataScientist.setNext(pBackend);
+
         Tarea tarea1 = new Tarea("Diseñar pantalla", "interfaz");
         Tarea tarea2 = new Tarea("Configurar base de datosSQL", "BasesdeDatos");
         Tarea tarea3 = new Tarea("Implementar lógica", "Backend");
         Tarea tarea4 = new Tarea("Configurar servidor de pruebas", "PM");
-        
-        System.out.println("Procesando tareas:\n");
-      pDisenador.handleRequest(tarea1);
-      pDisenador.handleRequest(tarea2);
-      pDisenador.handleRequest(tarea3);
-      pDisenador.handleRequest(tarea4);
-     }
 
-    
+        System.out.println("Procesando tareas:\n");
+        pDisenador.handleRequest(tarea1);
+        pDisenador.handleRequest(tarea2);
+        pDisenador.handleRequest(tarea3);
+        pDisenador.handleRequest(tarea4);
+    }
+
 }
