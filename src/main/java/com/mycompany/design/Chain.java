@@ -24,7 +24,7 @@ public class Chain {
         Tarea tarea3 = new Tarea("Implementar lógica", "Backend");
         Tarea tarea4 = new Tarea("Configurar servidor de pruebas", "PM");
         
-        System.out.println("Procesando tareas:\n");
+     
         disenador.handleRequest(tarea1);
         disenador.handleRequest(tarea2);
         disenador.handleRequest(tarea3);
