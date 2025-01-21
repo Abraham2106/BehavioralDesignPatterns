@@ -4,6 +4,9 @@
  */
 package com.mycompany.design;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author solan
@@ -11,30 +14,25 @@ package com.mycompany.design;
 public class Chain {
      public static void main(String[] args){
          
-         
-         
-         
-         
-         /**
-          * 
-          * Make another example
-        Verificador verificador = new VerificadorP();
-        Verificador verificador2 = new VerificadorN();
-        Verificador verificador3 = new VerificadorE();
-       
-        verificador.setNext(verificador2);
-        verificador2.setNext(verificador3);
-
-        Solicitud solicitud = new Solicitud("Solicitud 1", EstadoEntrega.EXCELENTE);
-        Solicitud solicitud2 = new Solicitud("Solicitud 2", EstadoEntrega.NORMAL);
-        Solicitud solicitud3 = new Solicitud("Solicitud 3", EstadoEntrega.PESIMO);
-
-        verificador.verificar(solicitud);
-        verificador.verificar(solicitud2);
-        verificador.verificar(solicitud3);
-        */
-
-
-
+        Gestor disenador =  new Disenador();
+        Gestor pDataScientist = new DataScientist();
+        Gestor backend = new BackendDev();
+        
+        disenador.setNext(pDataScientist);
+        pDataScientist.setNext(backend);
+        
+        
+        Tarea tarea1 = new Tarea("Diseñar pantalla", "interfaz");
+        Tarea tarea2 = new Tarea("Configurar base de datosSQL", "BasesdeDatos");
+        Tarea tarea3 = new Tarea("Implementar lógica", "Backend");
+        Tarea tarea4 = new Tarea("Configurar servidor de pruebas", "PM");
+        
+        System.out.println("Procesando tareas:\n");
+        disenador.handleRequest(tarea1);
+        disenador.handleRequest(tarea2);
+        disenador.handleRequest(tarea3);
+        disenador.handleRequest(tarea4);
      }
+
+    
 }

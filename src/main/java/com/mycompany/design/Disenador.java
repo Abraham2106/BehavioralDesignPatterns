@@ -16,7 +16,7 @@ public class Disenador extends GestorBase{
     }
     @Override
     protected void handle(Tarea tarea){
-        System.out.println("El Disenador esta manejando la tarea:" + tarea.getNombreTarea());
+        System.out.println("El Disenador esta manejando la tarea:  " + tarea.getNombreTarea());
     }
     
 }

@@ -11,6 +11,14 @@ package com.mycompany.design;
  */
 
 public interface Gestor {
-     void setNext(Gestor siguienteGestor); //siguiente gestor 
-     void handleRequest(Tarea tarea); // maneja la tarea 
+    /**
+     * Asigna el siguiente gestor en la cadena
+     * @param siguienteGestor 
+     */
+     void setNext(Gestor siguienteGestor); 
+     /**
+      * Maneja la tarea
+      * @param tarea 
+      */
+     void handleRequest(Tarea tarea); 
 }
