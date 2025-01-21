@@ -10,13 +10,13 @@ package com.mycompany.design;
  */
 public class Tarea {
     String nombreTarea;
-    String categoria; // Ejemplo: "UI", "Base de Datos", "Backend"
+    String categoria; 
 
     /**
      * Constructor de la clase Tarea.
      * 
      * @param nombreTarea Descripción de la tarea.
-     * @param categoria   Categoría de la tarea (UI, Base de Datos, Backend).
+     * @param categoria   Categoría de la tarea (interfaz, Base de Datos, Backend).
      */
     public Tarea(String nombreTarea, String categoria) {
         this.nombreTarea = nombreTarea;
