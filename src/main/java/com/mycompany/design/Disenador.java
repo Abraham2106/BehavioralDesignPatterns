@@ -9,7 +9,7 @@ package com.mycompany.design;
  * @author solan
  */
 public class Disenador extends GestorBase{
-    
+    // Implementacion de las funciones abstractas de la clase GestorBase
     @Override
     protected boolean canHandle(Tarea tarea){
         return "Interfaz".equalsIgnoreCase(tarea.getCategoria());

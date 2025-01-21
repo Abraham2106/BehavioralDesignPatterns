@@ -4,9 +4,6 @@
  */
 package com.mycompany.design;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author solan

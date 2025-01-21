@@ -5,7 +5,7 @@
 package com.mycompany.design;
 
 /**
- *
+ * 
  * @author solan
  */
 public class Design {
