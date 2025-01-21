@@ -10,7 +10,7 @@ package com.mycompany.design;
  * Define el contrato de los responsables en la cadena de responsabilidad
  */
 
-public interface Gestor {
+ interface Gestor {
     /**
      * Asigna el siguiente gestor en la cadena
      * @param siguienteGestor 
